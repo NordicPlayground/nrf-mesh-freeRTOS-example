@@ -1,4 +1,4 @@
-/* Copyright (c) 2010 - 2019, Nordic Semiconductor ASA
+/* Copyright (c) 2010 - 2020, Nordic Semiconductor ASA
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without modification,
@@ -52,7 +52,7 @@
  * @{
  */
 
-/** Set this to 0 to resume the Mesh processing task in the FreeRTOS idle handler instead
+/** Set this to 1 to resume the Mesh processing task in the FreeRTOS idle handler instead
  *  of resuming it in the bearer_event signal handler
  */
 #define MESH_FREERTOS_IDLE_HANDLER_RESUME   1
@@ -124,11 +124,6 @@
 #define ACCESS_SUBSCRIPTION_LIST_COUNT (ACCESS_MODEL_COUNT)
 
 /**
- * The number of pages of flash storage reserved for the access layer for persistent data storage.
- */
-#define ACCESS_FLASH_PAGE_COUNT (1)
-
-/**
  * @defgroup ACCESS_RELIABLE_CONFIG Configuration of access layer reliable transfer
  * @{
  */
@@ -172,8 +167,6 @@
  * - Subscription address
  */
 #define DSM_NONVIRTUAL_ADDR_MAX                         (3)
-/** Number of flash pages reserved for the DSM storage. */
-#define DSM_FLASH_PAGE_COUNT                            (1)
 /** @} end of DSM_CONFIG */
 
 /** @} */

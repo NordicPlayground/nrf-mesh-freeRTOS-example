@@ -1,4 +1,4 @@
-/* Copyright (c) 2010 - 2019, Nordic Semiconductor ASA
+/* Copyright (c) 2010 - 2020, Nordic Semiconductor ASA
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without modification,
@@ -45,12 +45,6 @@
  *
  * @{
  */
-
-/** Controls if the model instance should force all mesh messages to be segmented messages. */
-#define APP_CONFIG_FORCE_SEGMENTATION  (false)
-
-/** Controls the MIC size used by the model instance for sending the mesh messages. */
-#define APP_CONFIG_MIC_SIZE            (NRF_MESH_TRANSMIC_SIZE_SMALL)
 
 /** Redefine the RTC instance used by FreeRTOS since both Mesh and FreeRTOS use RTC1. */
 #ifdef portNRF_RTC_REG
